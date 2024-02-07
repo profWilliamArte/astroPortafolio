@@ -1,3 +1,6 @@
+---
+import "../styles/styles.astro";
+---
 <header>
     <a href="#" class="logo">Mayoya</a>
     <nav>
@@ -11,50 +14,30 @@
         </ul>
     </nav>
      <div class="bx bx-menu" id="menu-icon"></div>
+  
   </header>
-  <style>
-    header{
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1000;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: transparent;
-        padding: 30px 10%;
-        border-bottom: 1px solid transparent;
-        transition: all ease .50s;
-    }
-        header.sticky{
-        padding: 15px 11%;
-        background: #000;
-        border-bottom: 1px solid #4e5055;
-    }
-    .logo{
-    font-family: 'Permanent Marker', cursive; 
-    color: var(--main-color);
-    font-size: 3rem;
-    }
-    #menu{
-    display: flex;  
-    }
-    #menu a{
-        color: var(--second-color);
-        font-size: var(--p-font);
-        font-weight: 600;
-        margin: 0 40px;
-        transition: all ease .40s;
-    }
-    #menu a:hover{
-        color: var(--main-color);
-    }
-    #menu-icon{
-        font-size: 42px;
-        color: var(--text-color);
-        z-index: 10001;
-        cursor: pointer;
-        display: none;
-    }
+  <style >
+   
+
+
   </style> 
+  <script>
+    console.log("entro")
+    const menuIconEl=document.querySelector('#menu-icon');
+    const menuEl=document.querySelector('#menu');
+    const headerEl = document.querySelector("header");
+
+    menuIconEl.addEventListener("click",()=>{
+        menuIconEl.classList.toggle('bx-x');
+        menuEl.classList.toggle('open');
+    })
+    window.onscroll = () =>{
+        menuIconEl.classList.remove('bx-x');
+        menuEl.classList.remove('open');
+    }
+
+    addEventListener("scroll",()=>{
+        headerEl.classList.toggle("sticky",window.scrollY>200)
+    })
+
+  </script>
