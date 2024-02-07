@@ -39,5 +39,59 @@
     background-color: var(--bg-color);
    
     }
+
+    @media(max-width:1600px){
+    header{
+        padding: 14px 4%;
+    }
+}
+@media (max-width:1200px){
+    #menu a{
+        margin:  0 20px;
+    }
+    :root{
+        --h1-font:5rem;
+        --h2-font:3.1rem;
+        --p-font:1rem;  
+    }
+    .logo{
+        font-size: 2rem;
+    }     
+}
+@media (max-width:1060px){
+    section{
+        padding: 50px 5%;
+    }
+    :root{
+        --h1-font:4rem;
+        --h2-font:2.5rem;
+        --p-font:0.8rem;  
+    }    
+}
+@media (max-width:870px){
+    #menu-icon{
+        display: block;
+    }
+    #menu{
+        position: absolute;
+        top: -800px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        padding: 20px 0;
+        text-align: left;
+        transition:  all ease 0.50s;
+    }
+    #menu a{
+        display: block;
+        font-size: 22px;
+        padding: 12px 0;
+    }
+    #menu.open{
+        top:100%
+    }
+}
     
 </style>
