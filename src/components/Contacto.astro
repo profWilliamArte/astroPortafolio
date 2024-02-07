@@ -1,0 +1,98 @@
+<section class="contact" id="contact">
+    <div class="contact-left">
+        <div class="in">
+            <i class="bx bxl-instagram"></i>
+            <h4>Instagram</h4>
+        </div>
+        <div class="in">
+            <i class="bx bxl-telegram"></i>
+            <h4>Telegram</h4>
+        </div>
+        <div class="in">
+            <i class="bx bxl-discord"></i>
+            <h4>Discord</h4>
+        </div>
+    </div>
+    <div class="contact-right">
+        <h2>Perfil</h2>
+        <a href="#">Hablame</a>
+        <p>¿Quieres iniciar un proyecto empresarial o personal, como una tesis u otro emprendimiento? 
+        ¡Háblame sin compromiso alguno! Comunícate conmigo y juntos trabajaremos en la creación de algo grandioso. </p>
+    </div>
+  
+</section>
+<a href="#" class="sroll-btn"><i class="bx bx-chevron-up"></i></a>
+<style>
+    .contact{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 50px;
+}
+.contact-left{
+    flex:1;
+    text-align: center;
+    display: flex;
+    gap: 25px;
+}
+.contact-right{
+    flex:3;
+}
+.contact i{
+    font-size: 120px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    opacity: 0.5;
+    transition:  all ease 0.40s;
+}
+.contact i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.contact h4{
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contact h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.contact a{
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--main-color);
+    padding: 3px 0;
+    transition: all ease 0.40s;
+}
+.contact a:hover{
+    transform: translateY(-5px);
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.contact p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+}
+.sroll-btn{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-size: 23px;
+    padding: 9px;
+    border-radius: 0.8rem;
+
+
+}
+
+</style>
