@@ -1,0 +1,2 @@
+1) npm create astro@latest
+2) npm i gh-pages

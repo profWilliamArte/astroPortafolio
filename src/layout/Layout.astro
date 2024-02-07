@@ -1,0 +1,43 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Portafolio</title>
+	</head>
+	<body>
+		<slot/>
+	</body>
+</html>
+
+<style is:global>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+    }
+    :root{
+        --bg-color:#191919;
+        --secont-bg-color:#101010;
+        --third-bg-color:#202020;
+        --main-color:#e9204f;
+        --text-color:#fff;
+        --second-color:#e4e4e4;
+        --other-color:#c6c9d8bf;
+        --h1-font:7rem;
+        --h2-font:3.5rem;
+        --p-font:1.1rem;
+    }
+    body{
+    color:var(--text-color);
+    background-color: var(--bg-color);
+   
+    }
+    
+</style>

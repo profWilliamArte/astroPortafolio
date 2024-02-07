@@ -1,0 +1,56 @@
+<header>
+    <a href="#" class="logo">Mayoya</a>
+    <nav>
+        <ul id="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#service">Servicios</a></li>
+            <li><a href="$portafolio">Portafolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+     <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <style>
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        padding: 30px 10%;
+        border-bottom: 1px solid transparent;
+        transition: all ease .50s;
+    }
+
+    .logo{
+    font-family: 'Permanent Marker', cursive; 
+    color: var(--main-color);
+    font-size: 3rem;
+    }
+    #menu{
+    display: flex;  
+    }
+    #menu a{
+        color: var(--second-color);
+        font-size: var(--p-font);
+        font-weight: 600;
+        margin: 0 40px;
+        transition: all ease .40s;
+    }
+    #menu a:hover{
+        color: var(--main-color);
+    }
+    #menu-icon{
+        font-size: 42px;
+        color: var(--text-color);
+        z-index: 10001;
+        cursor: pointer;
+        display: none;
+    }
+  </style> 
