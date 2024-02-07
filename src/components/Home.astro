@@ -1,0 +1,58 @@
+<section class="home" id="home">
+    <div class="hero-text">
+        <h3>Hola mi nombre es</h3>
+        <h1>Mariana Garcia</h1>
+        <h4>Frontend - Backent - Bases de Datos</h4>
+        <a href="#" class="btn">Algunos de mis Trabajos</a>
+
+    </div>
+</section>
+<style>
+    .home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/astro01/img/persona4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+    .hero-text{
+        color: var(--second-color);
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 15px;
+        word-spacing: 10px;
+    }
+    .hero-text h1{
+        font-family: 'Dosis', sans-serif;
+        font-size: var(--h1-font);
+        color: var(--text-color);
+        font-weight: 800;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+    .hero-text h4{
+        color: var(--second-color);
+        font-size: 25px;
+        font-weight: 600;
+        word-spacing: 15px;
+        margin-bottom: 3.5rem;
+    }
+    .btn{
+        display: inline-block;
+        padding: 16px 45px;
+        background: var(--main-color);
+        color: var(--text-color);
+        font-size: var(--p-font);
+        font-weight: 600;
+        border: 2px solid var(--main-color);
+        transition: all ease .50s;
+    }
+    .btn:hover{
+        transform: translateX(5px);
+        background: transparent;
+    }
+</style>
